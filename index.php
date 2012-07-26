@@ -46,7 +46,7 @@ if (isset($_GET["id"])) {
                 <?php
                     foreach ($tpls as $tplId => $tplData) {
                         echo "<li";
-                        
+
                         if($tplData["active"]){
                             echo " class=\"active\" ";
                         }
@@ -67,6 +67,7 @@ if (isset($_GET["id"])) {
         <footer>
             <ul>
                 <li><a href="<?php echo $siteRoot ?>agb/">AGB</a></li>
+                <li>·</li>
                 <li><a href="<?php echo $siteRoot ?>agb/">Impressum</a></li>
             </ul>
         </footer>
