@@ -6,12 +6,24 @@ $siteRoot = "/";
 $tpls = array(
     "index" => array(
         "tpl" => "tpl/index.php", 
-        "nav_name" => "Menu1", 
-        "active" => false),
+        "link_name" => "Menu1", 
+        "active" => false,
+        "navigation" => true),
     "about" => array(
         "tpl" => "tpl/about.php", 
-        "nav_name" => "Über Uns", 
-        "active" => false),
+        "link_name" => "Über Uns", 
+        "active" => false,
+        "navigation" => true),
+    "impressum" => array(
+        "tpl" => "tpl/impressum.php", 
+        "link_name" => "Impressum", 
+        "active" => false,
+        "navigation" => false),
+    "agb" => array(
+        "tpl" => "tpl/agb.php", 
+        "link_name" => "AGB", 
+        "active" => false,
+        "navigation" => false),
 );
 
 if (isset($_GET["id"])) {
@@ -45,6 +57,11 @@ if (isset($_GET["id"])) {
             <ul>
                 <?php
                     foreach ($tpls as $tplId => $tplData) {
+                        // ignore non nav links
+                        if(!$tplData["navigation"]){
+                            continue;
+                        }
+
                         echo "<li";
 
                         if($tplData["active"]){
@@ -52,7 +69,7 @@ if (isset($_GET["id"])) {
                         }
 
                         echo "><a href=\"?id=" . $tplId . "\"";
-                        echo ">" . $tplData["nav_name"] . "</a></li>";
+                        echo ">" . $tplData["link_name"] . "</a></li>";
                     }
                 ?>
             </ul>
@@ -66,9 +83,9 @@ if (isset($_GET["id"])) {
         
         <footer>
             <ul>
-                <li><a href="?id=agb">AGB</a></li>
+                <li><a href="?id=agb"><?php echo $tpls["agb"]["link_name"]; ?></a></li>
                 <li>·</li>
-                <li><a href="?id=impressum">Impressum</a></li>
+                <li><a href="?id=impressum"><?php echo $tpls["impressum"]["link_name"]; ?></a></li>
             </ul>
         </footer>
 
