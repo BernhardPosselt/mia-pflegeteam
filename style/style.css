@@ -73,6 +73,7 @@ nav {
  */
 #content {
 	box-sizing: padding-box;
+	-moz-box-sizing: padding-box;
 	padding: 15px;
 	width: 100%;
 	background-color: #fefefe;
