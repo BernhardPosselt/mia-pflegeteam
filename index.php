@@ -66,9 +66,9 @@ if (isset($_GET["id"])) {
         
         <footer>
             <ul>
-                <li><a href="<?php echo $siteRoot ?>agb/">AGB</a></li>
+                <li><a href="?id=agb">AGB</a></li>
                 <li>·</li>
-                <li><a href="<?php echo $siteRoot ?>agb/">Impressum</a></li>
+                <li><a href="?id=impressum">Impressum</a></li>
             </ul>
         </footer>
 
