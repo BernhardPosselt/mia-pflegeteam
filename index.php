@@ -45,7 +45,12 @@ if (isset($_GET["id"])) {
             ?>
         </div>
         
-        <footer></footer>
+        <footer>
+            <ul>
+                <li><a href="<?php echo $siteRoot ?>agb/">AGB</a></li>
+                <li><a href="<?php echo $siteRoot ?>agb/">Impressum</a></li>
+            </ul>
+        </footer>
 
     </div>
 </body>

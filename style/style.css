@@ -81,5 +81,19 @@ nav {
  * Footer
  */
 footer {
-
+	text-align: right;
 }
+
+	footer ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+		footer ul li {
+			display: inline-block;
+		}
+
+			footer ul li a {
+				text-decoration: none;
+			}
