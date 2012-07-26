@@ -72,8 +72,13 @@ nav {
  * Content
  */
 #content {
+	box-sizing: border-box;
+	padding: 10px;
 	clear: both;
 	width: 100%;
+	background-color: #fefefe;
+	border-bottom: 3px solid #75507b;
+	padding-bottom: 20px;
 }
 
 	#content p, #content h1, #content h2, #content li {
@@ -104,7 +109,7 @@ footer {
 			color: #888a85;
 			line-height: 150px;
 			display: inline-block;
-			padding-right: 10px;
+			padding-right: 5px;
 		}
 
 			footer ul li a {
