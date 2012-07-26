@@ -4,13 +4,22 @@
 $siteRoot = "/";
 
 $tpls = array(
-    "index" => "tpl/index.php"
+    "index" => array(
+        "tpl" => "tpl/index.php", 
+        "nav_name" => "Menu1", 
+        "active" => false),
+    "about" => array(
+        "tpl" => "tpl/about.php", 
+        "nav_name" => "Über Uns", 
+        "active" => false),
 );
 
 if (isset($_GET["id"])) {
-    $tpl = $tpls[ $_GET["id"] ];
+    $tpl = $tpls[ $_GET["id"] ]["tpl"];
+    $tpls[ $_GET["id"] ]["active"] = true;
 } else {
-    $tpl = $tpls["index"];    
+    $tpl = $tpls["index"]["tpl"];   
+    $tpls["index"]["active"] = true; 
 }
 
 ?>
@@ -34,8 +43,18 @@ if (isset($_GET["id"])) {
         
         <nav>
             <ul>
-                <li><a href="#">Menu1</a></li>
-                <li class="active"><a href="#">Menu2</a></li>
+                <?php
+                    foreach ($tpls as $tplId => $tplData) {
+                        echo "<li";
+                        
+                        if($tplData["active"]){
+                            echo " class=\"active\" ";
+                        }
+
+                        echo "><a href=\"?id=" . $tplId . "\"";
+                        echo ">" . $tplData["nav_name"] . "</a></li>";
+                    }
+                ?>
             </ul>
         </nav>
         
