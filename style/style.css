@@ -83,6 +83,11 @@ nav {
  */
 footer {
 	text-align: right;
+	height: 100px;
+	background-image: url("img/footer-logo.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 150px;
 }
 
 	footer ul {
@@ -92,6 +97,7 @@ footer {
 	}
 
 		footer ul li {
+			line-height: 100px;
 			display: inline-block;
 		}
 
