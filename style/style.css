@@ -72,8 +72,8 @@ nav {
  * Content
  */
 #content {
-	box-sizing: padding-box;
-	-moz-box-sizing: padding-box;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	padding: 15px;
 	width: 100%;
 	background-color: #fefefe;
