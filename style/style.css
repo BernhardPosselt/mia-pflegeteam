@@ -79,11 +79,16 @@ nav {
 	background-color: #fefefe;
 	border-bottom: 3px solid #75507b;
 	padding-bottom: 20px;
+	color: #3b0c47;
 }
 
 	#content p, #content h1, #content h2, #content li {
 		line-height: 1.5;
-		color: #3b0c47;
+		
+	}
+
+	#content ul {
+		margin-left: 10px;
 	}
 
 
