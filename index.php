@@ -42,7 +42,7 @@ if (isset($_GET["id"])) {
 <head>
     <title>Pia Pflegeteam</title>
     <link rel="icon" href="<?php echo $siteRoot ?>style/img/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="<?php echo $siteRoot ?>style/img/favicon.ico" type="image/x-icon"/> 
+    <link rel="shortcut icon" href="<?php echo $siteRoot ?>img/favicon.png" type="image/x-icon"/> 
     <link rel="stylesheet" type="text/css" href="<?php echo $siteRoot ?>style/lib/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo $siteRoot ?>style/style.css"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
