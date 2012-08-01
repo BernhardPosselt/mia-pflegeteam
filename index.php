@@ -10,8 +10,13 @@ $tpls = array(
         "active" => false,
         "navigation" => true),
     "about" => array(
+        "tpl" => "tpl/application.php", 
+        "link_name" => "Bewerbung", 
+        "active" => false,
+        "navigation" => true),
+    "agb" => array(
         "tpl" => "tpl/contact.php", 
-        "link_name" => "Kontakt & Bewerbung", 
+        "link_name" => "Kontakt", 
         "active" => false,
         "navigation" => true),
     "impressum" => array(
@@ -19,11 +24,7 @@ $tpls = array(
         "link_name" => "Impressum", 
         "active" => false,
         "navigation" => false),
-    "agb" => array(
-        "tpl" => "tpl/agb.php", 
-        "link_name" => "AGB", 
-        "active" => false,
-        "navigation" => false),
+
 );
 
 if (isset($_GET["id"])) {
@@ -40,7 +41,7 @@ if (isset($_GET["id"])) {
 <html>
 
 <head>
-    <title>Pia Pflegeteam</title>
+    <title>Pflegeteam PIA - Helfer mit Herz</title>
     <link rel="icon" href="<?php echo $siteRoot ?>style/img/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="<?php echo $siteRoot ?>img/favicon.png" type="image/x-icon"/> 
     <link rel="stylesheet" type="text/css" href="<?php echo $siteRoot ?>style/lib/normalize.css"/>
@@ -83,8 +84,6 @@ if (isset($_GET["id"])) {
         
         <footer>
             <ul>
-                <li><a href="?id=agb"><?php echo $tpls["agb"]["link_name"]; ?></a></li>
-                <li>·</li>
                 <li><a href="?id=impressum"><?php echo $tpls["impressum"]["link_name"]; ?></a></li>
             </ul>
         </footer>

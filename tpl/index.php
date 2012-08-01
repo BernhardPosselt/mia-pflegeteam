@@ -7,7 +7,7 @@ Daher sind Angehörige daran interessierte diese Pflegeleistungen in professione
  Der Mensch steht im Mittelpunkt der häuslichen Pflege.</p>
 
 
-<p>Die Schwerpunkte unserer Arbeit sind die Bereiche der
+<p><b>Die Schwerpunkte unserer Arbeit sind die Bereiche der</b>
 <ul>
     <li>ambulanten Grund- und Behandlungspflege § 132 / 132a SGB V</li>
     <li>hauswirtschaftlichen Versorgung</li>
@@ -16,7 +16,7 @@ Daher sind Angehörige daran interessierte diese Pflegeleistungen in professione
     <li>zusätzlichen Betreuungsleistungen nach § 45b SGB XI</li>
     <li>grundpflegerischen Versorgung § 36 SGB XI</li>
 </ul>
-Immer an Ihrer Seite – Unsere Fachkräfte</p>
+<b>Immer an Ihrer Seite – Unsere Fachkräfte</b></p>
 
 
 <p>Jeder Patient hat individuelle Wünsche und Bedürfnisse. 
