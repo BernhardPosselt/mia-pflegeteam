@@ -1,5 +1,20 @@
-* {
+/**
+ * Fonts
+ */
+@font-face {
+    font-family: dejavusans;
+    src: url('font/DejaVuSansCondensed.woff');
+}
 
+@font-face {
+    font-family: dejavusans;
+    font-weight: bold;
+    src: url('font/DejaVuSans-Bold.woff');
+}
+
+
+* {
+	font-family: dejavusans;
 }
 
 html, body {
@@ -86,10 +101,26 @@ nav {
 		
 	}
 
+	#content h1 {
+		font-size: 1.5em;
+	}
+
 	#content ul {
 		margin-left: 10px;
 	}
 
+
+	#content table th {
+		text-align: right;
+	}
+
+	#content table td {
+		padding-left: 20px;
+	}
+
+	#content .text_block {
+		padding: 0 0 40px 0;
+	}
 
 /**
  * Footer
