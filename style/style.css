@@ -38,11 +38,11 @@ html, body {
  * Header
  */
 header {
-	height: 350px;
+	height: 288px;
+	padding: 31px 0;
 	width: 100%;
-	background-image: url("img/header-logo.png");
-	background-repeat: no-repeat;	
-	background-position: center;
+	text-align: center;
+	vertical-align: center;
 }
 
 /**

@@ -57,7 +57,9 @@ if (isset($_GET["id"])) {
 <body>
     <div id="site">
         <div id="site-wrapper">
-            <header></header>
+            <header>
+                <a href="<?php echo $siteRoot; ?>"><img src="<?php echo $siteRoot; ?>img/header-logo.png" alt="logo" /></a>
+            </header>
             
             <nav>
                 <ul>
