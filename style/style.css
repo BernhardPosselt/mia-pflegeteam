@@ -90,9 +90,10 @@ nav {
 	-moz-box-sizing: border-box;
 	padding: 15px;
 	width: 100%;
+	min-height: 300px;
 	background-color: #fefefe;
-	border-bottom: 3px solid #75507b;
-	padding-bottom: 20px;
+	border-bottom: 3px solid #7dd496;
+	padding-bottom: 50px;
 	color: #3b0c47;
 }
 
@@ -103,6 +104,10 @@ nav {
 
 	#content h1 {
 		font-size: 1.5em;
+	}
+
+	#content h2 {
+		font-size: 1em;
 	}
 
 	#content ul {
