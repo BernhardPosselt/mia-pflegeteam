@@ -51,43 +51,43 @@ if (isset($_GET["id"])) {
 
 <body>
     <div id="site">
-        
-        <header></header>
-        
-        <nav>
-            <ul>
+        <div id="site-wrapper">
+            <header></header>
+            
+            <nav>
+                <ul>
+                    <?php
+                        foreach ($tpls as $tplId => $tplData) {
+                            // ignore non nav links
+                            if(!$tplData["navigation"]){
+                                continue;
+                            }
+
+                            echo "<li";
+
+                            if($tplData["active"]){
+                                echo " class=\"active\" ";
+                            }
+
+                            echo "><a href=\"?id=" . $tplId . "\"";
+                            echo ">" . $tplData["link_name"] . "</a></li>";
+                        }
+                    ?>
+                </ul>
+            </nav>
+            
+            <div id="content">
                 <?php
-                    foreach ($tpls as $tplId => $tplData) {
-                        // ignore non nav links
-                        if(!$tplData["navigation"]){
-                            continue;
-                        }
-
-                        echo "<li";
-
-                        if($tplData["active"]){
-                            echo " class=\"active\" ";
-                        }
-
-                        echo "><a href=\"?id=" . $tplId . "\"";
-                        echo ">" . $tplData["link_name"] . "</a></li>";
-                    }
+                include_once($tpl);
                 ?>
-            </ul>
-        </nav>
-        
-        <div id="content">
-            <?php
-            include_once($tpl);
-            ?>
+            </div>
+            
+            <footer>
+                <ul>
+                    <li><a href="?id=impressum"><?php echo $tpls["impressum"]["link_name"]; ?></a></li>
+                </ul>
+            </footer>
         </div>
-        
-        <footer>
-            <ul>
-                <li><a href="?id=impressum"><?php echo $tpls["impressum"]["link_name"]; ?></a></li>
-            </ul>
-        </footer>
-
     </div>
 </body>
     
