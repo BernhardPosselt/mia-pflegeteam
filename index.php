@@ -46,7 +46,12 @@ if (isset($_GET["id"])) {
     <link rel="shortcut icon" href="<?php echo $siteRoot ?>img/favicon.png" type="image/x-icon"/> 
     <link rel="stylesheet" type="text/css" href="<?php echo $siteRoot ?>style/lib/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo $siteRoot ?>style/style.css"/>
+    <meta name="author" content="Oberth-Media: http://oberth-media.de , Bernhard Posselt"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="keywords" content="pflegeteam, rostock, pia, palliativ, intensiv, ambulant, 
+    häuslicher, pflegedienst, krankenpfleger, altenpfleger, altenpflegehelfer, bewerbung, krankenpflege,
+     behandlungspflege, häusliche, versorgung, urlaubspflege, verhinderungspflege, beratungsgespräche, beratung, betreuung ,"/>        
+    <meta name="description" content="Pflegeteam PIA · Ihr freundlicher Pflegedienst aus Rostock."/>
 </head>
 
 <body>

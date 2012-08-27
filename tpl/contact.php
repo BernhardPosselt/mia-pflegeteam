@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <th>Telefon Nummer:</th>
-            <td>0381 / 46 22 957 3</td>
+            <td>0172 / 784 16 41</td>
         </tr>
     </table>
 </div>
